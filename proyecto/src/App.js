@@ -1,15 +1,29 @@
 import React from 'react';
 import './App.css';
-import Navbar from "./Componentes/comunes/Navbar";
-//*import {Cards} from "./Componentes/Cards";*/
-import CardsNuevasNoticias from "./Componentes/comunes/CardsNuevasNoticias"
+import { Routes, Route, Navigate} from 'react-router-dom';
+import  Home  from './Componentes/pages/Home'
+import  Secciones from './Componentes/pages/Secciones'
+import { Contacto } from './Componentes/pages/Contacto'
+import Layout from './Componentes/pages/Layout';
+import Navbar from './Componentes/comunes/Navbar/Navbar'
+import Footer from './Componentes/comunes/Footer/Footer';
+
 
 function App() {
+  
   return (
-    <>
-    
-    <Navbar/> 
-    <CardsNuevasNoticias/>
+    <>  
+
+        <Navbar/>
+        <Routes>
+            <Route path="/" element={<Layout/>}/>
+              <Route index element={<Home/>}/>
+              <Route path="Secciones" element={<Secciones/>}/>
+              <Route path="Contacto" element={<Contacto/>}/>
+              {/* <Router path="*" element={<div>404-Found</div>}/>*/}
+              <Route path="*" element={<Navigate replace to="/"/>}/>
+        </Routes>
+        <Footer/>
     </>
   )
   

@@ -5,30 +5,30 @@ import {
   Input,
   Button,
   Heading,
-  Textarea} from '@chakra-ui/react'
-
-
+  Text,
+  Link
+} from '@chakra-ui/react'
 import styled from 'styled-components'
-
 import {useFormik} from 'formik'
 
 import * as Yup from 'yup'
 
 
-export const Contacto = () => {
-  
+export const Register = () => {
+
     const {handleChange, handleSubmit}= useFormik ({
 
       initialValues: {
         nombre:'',
         email:'',
-        mensaje:'',
+        contraseña:'',
       },
 
       validationSchema : Yup.object({
         nombre: Yup.string().required('Campo requerido'),
         email: Yup.string().required('Campo requerido'),
-        mensaje: Yup.string()
+        contraseña: Yup.string()
+        .min(6,'Minimo de caracteres:6')
         .required('Campo requerido')
       }),
   
@@ -37,19 +37,18 @@ export const Contacto = () => {
       },
    
     });
-    
 
   return (
     <>
       <form onSubmit={handleSubmit}>
         <StyledFormControl >
-          <Heading as='h2'>CONTACTO</Heading>
+          <Heading as='h2'>REGISTRATE</Heading>
           <FormField>
             <FormLabel>Nombre Completo:</FormLabel>
             <StyledInput 
             type='text'
             name='name'
-            placeholder='Ingrese Nombre Completo'
+            placeholder='Ingresa Nombre Completo'
             onChange={handleChange}
             />
           </FormField>
@@ -60,24 +59,27 @@ export const Contacto = () => {
             type='email'
             name='email' 
             onChange={handleChange}
-            placeholder='Ingrese Email'
+            placeholder='Ingresa tu Email'
 
             />
           </FormField>
 
           <FormField>
-            <FormLabel>Mensaje:</FormLabel>
-            <StyledTextarea
-            type='text'
-            name='mensaje'
+            <FormLabel>Contraseña:</FormLabel>
+            <StyledInput 
+            type='password'
+            name='contraseña' 
             onChange={handleChange}
-            placeholder='Ingrese su mensaje'
-            size='sm'
-          />
-          </FormField>
-          
-          <StyledButton type="submit"> ENVIAR </StyledButton>
+            placeholder='Ingresa tu Contraseña'
+            />
+            </FormField>
+          <StyledButton type="submit"> REGISTRATE </StyledButton>
 
+          <Text> ¿Ya tenes una cuenta?{' '}
+            <Link color='teal.500' href='#'>
+                Inicia Sesion
+            </Link>
+            </Text>
       </StyledFormControl>
     </form>
     </>
@@ -94,14 +96,6 @@ const StyledFormControl = styled(FormControl)`
 `
 
 const StyledInput = styled(Input)`
-  padding: 15px 35px 15px 15px;
-  background-color: #2d3640;
-  color: #fff;
-  outline: none;
-  border: none;
-  width: 350px;
-`
-const StyledTextarea = styled(Textarea)`
   padding: 15px 35px 15px 15px;
   background-color: #2d3640;
   color: #fff;
