@@ -18,7 +18,7 @@ const Navbar = () => {
                 </section>
                 <div>
                     <Link to="/Home">HOME</Link>
-                    <Link to="/Secciones">ULTIMAS NOTICIAS</Link>
+                    <Link to="/UltimasNoticias">ULTIMAS NOTICIAS</Link>
                     <Link to="/Secciones">SECCIONES</Link>
                     <Link to="/Contacto">CONTACTO</Link>
                 </div>

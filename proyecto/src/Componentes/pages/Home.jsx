@@ -1,10 +1,11 @@
 import React from 'react'
-import CardsTodas from '../comunes/Cards/CardsTotas'
+import CardsTodas from '../comunes/Cards/CardsTodas'
 
 const Home = () => {
   return (
     <>
-      <CardsTodas/>
+    <CardsTodas/>
+
     </>
   )
 }
