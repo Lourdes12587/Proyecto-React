@@ -5,7 +5,7 @@ import  Home  from './Componentes/pages/Home'
 import  Secciones from './Componentes/pages/Secciones'
 import { Contacto } from './Componentes/pages/Contacto'
 import Layout from './Componentes/pages/Layout';
-import Navbar from './Componentes/comunes/Navbar/Navbar'
+import NavNuevo from './Componentes/comunes/Navbar/NavNuevo'
 import Footer from './Componentes/comunes/Footer/Footer';
 
 
@@ -14,7 +14,7 @@ function App() {
   return (
     <>  
 
-        <Navbar/>
+        <NavNuevo/>
         <Routes>
             <Route path="/" element={<Layout/>}/>
               <Route index element={<Home/>}/>

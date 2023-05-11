@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FooterContainerStyled, 
-LinksContainerStyled } from './FooterStyle';
+import { FooterContainerStyled, LinksContainerStyled } from './FooterStyle';
 import { IoLogoFacebook,IoLogoWhatsapp,IoLogoInstagram} from "react-icons/io";
 
 const Footer = () => {
@@ -19,7 +18,7 @@ const Footer = () => {
         </Link>
       </LinksContainerStyled>
       <p>
-       ❤️ YOU <span> EYES.NET</span>
+        YOU <span> EYES.NET</span>
       </p>
     </FooterContainerStyled>
   );

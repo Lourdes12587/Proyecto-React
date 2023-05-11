@@ -5,8 +5,7 @@ import CardsTodas from '../comunes/Cards/CardsTodas'
 const UltimasNoticias = () => {
   return (
     <div>
-      <CardsTodas/>
-      
+      <CardsTodas/>    
     </div>
   )
 }

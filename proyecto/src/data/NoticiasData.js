@@ -30,27 +30,20 @@ export const noticias = [
     },
     {
     id: 5,
-    titulo: 'Condenaron a perpetua a dos de los tres hombres acusados por el femicidio de Iara Rueda en Jujuy',
-    image:'https://tn.com.ar/resizer/CBlkJh7PyAFMaQSQ6VftAbNoT5s=/1440x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/JMZCF23XZFEWTKFVVUX25S6NQY.jpg',
-    descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus soluta sed deleniti saepe voluptatum culpa unde explicabo fugiat ipsa repellendus provident quo at, ducimus eligendi, quibusdam nam suscipit a!',
-    seccion:'ULTIMAS NOTICIAS'
-    },
-    {
-    id: 6,
     titulo: 'JULIAN ASSANGE: Heroe Mundial',
     image:'https://d.ibtimes.co.uk/en/full/1566346/julian-assange-wikileaks-founder.jpg?w=400',
     descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus soluta sed deleniti saepe voluptatum culpa unde explicabo fugiat ipsa repellendus provident quo at, ducimus eligendi, quibusdam nam suscipit a!',
     seccion:'SOCIALES'
     },
     {
-    id: 7,
+    id: 6,
     titulo: 'ALEXANDRA ELBAKYAN: La Robin Hood de la ciencia',
     image:'https://th.bing.com/th/id/R.a2844d2a9dc9b3ee18541d7115d280cc?rik=rnavqgWfFPqthw&riu=http%3a%2f%2fwww.criticatac.ro%2flefteast%2fwp-content%2fuploads%2f2017%2f02%2felbakyan.jpg&ehk=ejDsEpBdXJiwn%2fvx9iiZ9vRS7843Rd061ugac%2f%2fuH10%3d&risl=&pid=ImgRaw&r=0',
     descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus soluta sed deleniti saepe voluptatum culpa unde explicabo fugiat ipsa repellendus provident quo at, ducimus eligendi, quibusdam nam suscipit a!',
     seccion:'SOCIALES'
     },
     {
-    id: 8,
+    id: 7,
     titulo: 'JACOBO GRINBERG: Desaparecio de la faz de la tierra',
     image:'https://th.bing.com/th/id/R.d76a8fe4c4b0eb8735c5b04cdf964afd?rik=mu0gCnV89zKbJw&pid=ImgRaw&r=0',
     descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus soluta sed deleniti saepe voluptatum culpa unde explicabo fugiat ipsa repellendus provident quo at, ducimus eligendi, quibusdam nam suscipit a!',

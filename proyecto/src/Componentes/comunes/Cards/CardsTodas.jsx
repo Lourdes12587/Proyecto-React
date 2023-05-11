@@ -1,16 +1,6 @@
 import React from 'react'
-import { 
-  Grid,
-  Card, 
-  CardMedia, 
-  CardContent,
-  Typography, 
-  CardActions, 
-  Button, 
-  CardActionArea} from "@mui/material";
-import { Container } from '@chakra-ui/react';
-
-
+import { Grid, Card, CardMedia, CardContent, Typography, CardActions, Button, CardActionArea} from "@mui/material";
+import { Container } from './CardsTodasStyled'
 
 const CardsTodas = () => {
   return (
