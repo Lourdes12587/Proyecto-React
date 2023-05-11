@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ArticleList from '../Filtros/ArticleList';
 import ButtonList from '../Filtros/ButtonList';
 import { noticias } from '../../../data/NoticiasData';
+import { Container } from './FiltrosStyled'
 
 
 const Filtros = () => {
@@ -23,13 +24,10 @@ const Filtros = () => {
 
   return (
     <>
-        <div className ='title' style={{display: 'flex', flexDirection: 'column',
-          justifyContent: 'center',  alignItems: 'center'}}>
-
+        <Container>
           <ButtonList categories={categories} filterCategory={filterCategory}/>
           <ArticleList articles ={articles}/>
-
-        </div>
+        </Container>
         
     </>
   )

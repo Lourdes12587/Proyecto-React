@@ -4,9 +4,7 @@ import React from 'react'
 
 export const ArticleList = ({ articles }) => {
 	return (
-        <div style={{ display: 'grid',
-        gridTemplateColumns: 'repeat(2, 1fr)',
-        gap: '20px'}}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px'}}>
             {articles.map(article => (
           <Container>
             <Grid container spacing={5} sx={{mt:3}}/>
